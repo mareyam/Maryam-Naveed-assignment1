@@ -4,32 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css"> 
     <title>Document</title>
-    <link rel="stylesheet" href="design.css">
-    
 </head>
 <body>
-    <div class="mainDiv">
-            <div class="centered">
-                <div class="mainDivName">
-                    <h1>MARYAM NAVEED</h1>
+  <div class="mainWorkDone"> 
+            <div class="navbar">
+                <div class="logo">
+                    <h3>Maryam</h3>
+                </div> 
+                <div class="nav2">
+
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#workDone">Work </a>
+                    <a href="#contact">Contact</a>
+                    <!-- <a href="#skills">Skills</a> -->
                 </div>
-                <div class="viewProfile">
-                    <a href="resume.html"> 
-                        <button>View Profile</button>
-                    </a> 
-                </div>
+            </hr>
             </div>
-            <img src="" id="image">
-    
-        <script type="text/javascript">
-            let image = document.getElementById('image');
-            let images = ['img1.jpg','img2.jpg','img3.jpg','img4.jpg']
-            setInterval(function(){
-                let random = Math.floor(Math.random() * 4);
-                image.src = images[random];
-            }, 800);
-        </script>
     </div>
+
+    <div class="mainAbout" id="mainAbout">
+        <div class="sub1About">
+            <img src="me.jpg" />
+        </div>
+        <div class="sub2About">
+                <h3>Hey, its Maryam, nice to see you</h3>
+                <p>Dolores magna elitr consetetur nonumy sed. Sit dolor ipsum at diam sit labore, sanctus sea amet accusam amet eos. Accusam ipsum vero sit aliquyam vero elitr ea ea amet ut dolor invidunt tempor consetetur, est ipsum magna tempor lorem tempor et. Sed vero sadipscing dolore diam ut stet lorem dolores sea, clita et sed sed diam no kasd dolor. Magna takimata sed justo ut et et vero duo, rebum et at gubergren takimata aliquyam consetetur duo clita ut. Invidunt lorem dolores erat at duo rebum gubergren labore sea. Et lorem dolores sed ipsum, lorem sadipscing stet vero amet ut lorem,</p>
+        </div>
+    </div>
+
+
+      <div class="experience" id="experience">
+          <h1>Experience</h1>
+          <div class="junior">
+                <div class="juniorWebDev">
+                    <h3>Junior Web Developer</h3>
+                </div>
+                <div class="juniorWebDevP">
+                    <p>Worked as a junior web developer in ABC Software Limited,Gulberg Campus, Lahore, for the year 2017-2019. Where I worked in the domain of front-end web development during my stay I had exposure to many front-end libraries which included React, Vue, Angular</p>
+                </div>
+          </div>
+          <div class="senior">
+                <div class="seniorWebDev">
+                    <h3>Senior Web Developer</h3>
+                </div>
+                <div class="seniorWebDevP">
+                    <p>Working as a senior web developer in ABC Software Limited,Garden Town Campus, Lahore for the year 2019 till now. Where I am working as a full-stack web developer and working with  during my stay I had exposure to many front-end libraries which included React, Vue, Angular and ...</p>
+                </div> 
+          </div>
+      </div>
+
+
+      <div class="education" id="education">
+          <h1>Education</h1>
+                <div class="university">
+                    <div class="universityH">
+                        <h3>BS in COMPUTER SCIENCE 2019-2023</h3>
+                    </div>
+                    <div class="universityP">
+                        <p>Completed BS in COMPUTER SCIENCE from COMSATS University Islamabad, Lahore Campus</p>
+                    </div>
+            </div>
+            <div class="intermediate">
+                    <div class="intermediateH">
+                        <h3>Intermediate in COMPUTER SCIENCE</h3>
+                    </div>
+                    <div class="intermediateP">
+                        <p>Completed intermediate in COMPUTER SCIENCE from Punjab Group of Colleges, Lahore Campus</p>
+                    </div> 
+            </div>
+      </div>
+
+<!-- 
+        <div class="Skills">
+            
+                <img class="html" src="html2.png"/>          
+                <img class="css" src="css2.png"/>
+                <img class="react" src="react.png"/>
+                <img class="sql" src="sql.png"/>
+                <img class="node" src="node.png"/>
+                <img class="py" src="py.png"/>
+            
+        </div> -->
+
+
+
+      <div class="outer-wrapper" id="workDone">
+        <h1>Work Done</h1>
+        <div class="s-wrap s-type-1" role="slider">
+          <input type="radio" id="s-1" name="slider-control" checked="checked">
+          <input type="radio" id="s-2" name="slider-control">
+          <input type="radio" id="s-3" name="slider-control">
+          <input type="radio" id="s-4" name="slider-control">
+          
+         
+          <ul class="s-content">
+            <li class="s-item s-item-1"></li>
+            <li class="s-item s-item-2"></li>
+            <li class="s-item s-item-3"></li>
+            <li class="s-item s-item-4"></li>
+            
+            
+          </ul>
+          <div class="s-control">
+            <label class="s-c-1" for="s-1"></label>
+            <label class="s-c-2" for="s-2"></label>
+            <label class="s-c-3" for="s-3"></label>
+            <label class="s-c-4" for="s-4"></label>
+            
+            
+          </div>
+          <div class="s-nav">
+            <label class="s-nav-1 right" for="s-2"></label>
+            <label class="s-nav-2 left" for="s-1"></label>
+            <label class="s-nav-2 right" for="s-3"></label>
+            <label class="s-nav-3 left" for="s-2"></label>
+            <label class="s-nav-3 right" for="s-4"></label>
+            <label class="s-nav-4 left" for="s-3"></label>
+           
+
+          </div>
+        </div>
+    </div>
+    
+    <div class="mainDivContact" id="contact">
+        <h1>Contact us</h1>
+        <div class="subDivContact">
+        <div class="div1Contact">
+                
+       
+                <a class="dfn-hover" href="http://www.facebook.com/tillweoverdos/">
+                <dfn data-info="@tillweoverdos">
+                <img class="fb" src="fb.gif">
+                </dfn>
+                </a></dfn> 
+
+                <a class="dfn-hover" href="#">
+                    <dfn data-info="0307-xxxxxxx">
+                    <img class="mobile" src="mobile.gif">
+                    </dfn>
+                    </a></dfn> 
+
+                    <a class="dfn-hover" href="fa19-bse-069@cuilahore.edu.pk">
+                        <dfn data-info="maryam naveed">
+                        <img class="email" src="emailgif.gif">
+                        </dfn>
+                        </a></dfn> 
+
+                        <a class="dfn-hover" href="http://www.instagram.com/mareyamx/">
+                            <dfn data-info="@mareyamx">
+                            <img class="insta" src="insta.gif">
+                            </dfn>
+                            </a></dfn> 
+               
+
+                    
+       
+            </div>
+        <div class="contactAnimation">
+            <img src="employee.gif">
+        </div>
+        </div>
+    </div>
+   
+
+  
+
+        
 </body>
 </html>
+
+
+ <!-- <div class="outer-wrapper">
+        <div class="s-wrap s-type-1" role="slider">
+          <input type="radio" id="s-1" name="slider-control" checked="checked">
+          <input type="radio" id="s-2" name="slider-control">
+          <input type="radio" id="s-3" name="slider-control">
+          <input type="radio" id="s-4" name="slider-control">
+          
+         
+          <ul class="s-content">
+            <li class="s-item s-item-1"></li>
+            <li class="s-item s-item-2"></li>
+            <li class="s-item s-item-3"></li>
+            <li class="s-item s-item-4"></li>
+            
+            
+          </ul>
+          <div class="s-control">
+            <label class="s-c-1" for="s-1"></label>
+            <label class="s-c-2" for="s-2"></label>
+            <label class="s-c-3" for="s-3"></label>
+            <label class="s-c-4" for="s-4"></label>
+            
+            
+          </div>
+          <div class="s-nav">
+            <label class="s-nav-1 right" for="s-2"></label>
+            <label class="s-nav-2 left" for="s-1"></label>
+            <label class="s-nav-2 right" for="s-3"></label>
+            <label class="s-nav-3 left" for="s-2"></label>
+            <label class="s-nav-3 right" for="s-4"></label>
+            <label class="s-nav-4 left" for="s-3"></label>
+           
+
+          </div>
+        </div>
+ /*
+Junior Web Developer
+
+Senior Web Developer
+
+
+
+*/ -->
