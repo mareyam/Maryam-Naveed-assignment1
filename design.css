@@ -1,0 +1,401 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainDivName h1 {
+  font-size: 70px;
+  color: white;
+  padding: 20px;
+}
+.viewProfile {
+  display: flex;
+  justify-content: center;
+}
+.viewProfile button {
+  font-size: 40px;
+  color: white;
+  border: 5px solid white;
+  background-color: transparent;
+}
+img {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  height: 620px;
+}
+
+/* contact us  */
+
+.mainDivContact h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.subDivContact {
+  display: flex;
+  justify-content: center;
+}
+
+.div1Contact {
+  display: inline-block;
+}
+
+.fb,
+.insta,
+.email,
+.mobile {
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contactAnimation img {
+  height: 400px;
+  width: 500px;
+}
+dfn {
+  background: #e9e9e9;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  position: absolute;
+  opacity: 0;
+  width: 230px;
+  padding: 0.5em 0.8em;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {
+  z-index: 2;
+} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {
+  opacity: 1;
+}
+dfn:hover::after {
+  top: 100px;
+}
+dfn:hover::before {
+  top: 90px;
+}
+
+/* workdone */
+
+.outer-wrapper {
+  margin-top: 70px;
+  z-index: -2;
+}
+.s-wrap {
+  margin-bottom: 50px;
+  padding-bottom: 55%;
+  position: relative;
+  border: 10px solid #fff;
+  background-color: #f2ebe9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+/* when i click on pic it will take it back uper instead of being in same pos */
+.s-wrap > input {
+  display: none;
+}
+.s-wrap .s-content {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 500%;
+  height: 100%;
+  transition: transform 1s;
+}
+.s-wrap .s-item {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s-wrap .s-item-1 {
+  background-image: url("img1.jpg");
+}
+.s-wrap .s-item-2 {
+  background-image: url("img2.jpg");
+}
+.s-wrap .s-item-3 {
+  background-image: url("img3.jpg");
+}
+.s-wrap .s-item-4 {
+  background-image: url("img4.jpg");
+}
+
+.s-type-1 .s-control {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  transition-timing-function: ease-out;
+}
+.s-type-1 .s-control > label[class^="s-c-"] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background-color: #f2ebe9;
+  cursor: pointer;
+}
+.s-type-1 .s-nav label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  padding: 5px 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.s-type-1 .s-nav label::before,
+.s-type-1 .s-nav label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 24px;
+  background-color: #fff;
+}
+.s-type-1 .s-nav label::before {
+  margin-bottom: -12px;
+}
+.s-type-1 .s-nav label.left {
+  left: 20px;
+}
+.s-type-1 .s-nav label.left::before {
+  transform: rotate(45deg);
+}
+.s-type-1 .s-nav label.left::after {
+  transform: rotate(-45deg);
+}
+.s-type-1 .s-nav label.right {
+  right: 20px;
+}
+.s-type-1 .s-nav label.right::before {
+  transform: rotate(-45deg);
+}
+.s-type-1 .s-nav label.right::after {
+  transform: rotate(45deg);
+}
+.s-type-1 #s-1:checked ~ .s-content {
+  transform: translateX(0%);
+}
+.s-type-1 #s-1:checked ~ .s-control .s-c-1 {
+  background-color: #333;
+}
+.s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
+  display: block;
+}
+.s-type-1 #s-2:checked ~ .s-content {
+  transform: translateX(-20%);
+}
+.s-type-1 #s-2:checked ~ .s-control .s-c-2 {
+  background-color: #333;
+}
+.s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
+  display: block;
+}
+.s-type-1 #s-3:checked ~ .s-content {
+  transform: translateX(-40%);
+}
+.s-type-1 #s-3:checked ~ .s-control .s-c-3 {
+  background-color: #333;
+}
+.s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
+  display: block;
+}
+.s-type-1 #s-4:checked ~ .s-content {
+  transform: translateX(-60%);
+}
+.s-type-1 #s-4:checked ~ .s-control .s-c-4 {
+  background-color: #333;
+}
+.s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
+  display: block;
+}
+.s-type-1 #s-5:checked ~ .s-content {
+  transform: translateX(-80%);
+}
+.s-type-1 #s-5:checked ~ .s-control .s-c-5 {
+  background-color: #333;
+}
+.s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
+  display: block;
+}
+
+/* about *.........*/
+
+.mainAbout {
+  margin-bottom: 5%;
+  display: block;
+  background-color: #f2ebe9;
+}
+
+.sub1About {
+  margin-top: 5%;
+}
+.sub1About img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.sub2About {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.sub2About h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.sub2About p {
+  font-weight: lighter;
+  font-size: 20px;
+}
+/* navbar */
+/* resume */
+
+.logo h3 {
+  color: white;
+  padding-left: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #f2ebe9;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.logo h3 {
+  color: black;
+}
+/* Change background on mouse-over */
+.navbar a:hover,
+.logo h3:hover {
+  background: rgb(138, 104, 104);
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-bottom: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* resume */
+.body {
+  background-color: #f2ebe9;
+}
+.experience,
+.education {
+  background-color: #f2ebe9;
+}
+.experience h1,
+.education h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.juniorWebDev,
+.seniorWebDev {
+  border: 2px solid green;
+  height: 200px;
+  width: 500px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.juniorWebDevP,
+.seniorWebDevP {
+  border: 2px solid red;
+  height: 200px;
+  width: 500px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.junior,
+.senior {
+  display: flex;
+  justify-content: space-around;
+}
+.senior {
+  flex-direction: row-reverse;
+}
+
+.universityH,
+.intermediateH {
+  border: 2px solid green;
+  height: 200px;
+  width: 500px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.universityP,
+.intermediateP {
+  border: 2px solid red;
+  height: 200px;
+  width: 500px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.university,
+.intermediate {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.intermediate {
+  flex-direction: row-reverse;
+}
+
+.education {
+  margin-bottom: 5%;
+}
