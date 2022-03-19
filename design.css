@@ -8,7 +8,7 @@
 .mainDivName h1 {
   font-size: 70px;
   color: white;
-  padding: 20px;
+  padding-bottom: -10px;
 }
 .viewProfile {
   display: flex;
@@ -19,12 +19,41 @@
   color: white;
   border: 5px solid white;
   background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+
+.viewProfile button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.viewProfile button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.viewProfile button:hover span {
+  padding-right: 25px;
+}
+
+.viewProfile button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 img {
   display: block;
   width: 100%;
   transition: 0.5s;
-  height: 750px;
+  height: 610px;
 }
 
 /* contact us  */
@@ -111,7 +140,7 @@ dfn:hover::before {
   padding-bottom: 55%;
   position: relative;
   border: 10px solid #fff;
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
@@ -162,7 +191,7 @@ dfn:hover::before {
   margin-right: 10px;
   border-radius: 50%;
   border: 1px solid #999;
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
   cursor: pointer;
 }
 .s-type-1 .s-nav label {
@@ -253,7 +282,7 @@ dfn:hover::before {
 .mainAbout {
   margin-bottom: 5%;
   display: block;
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
 }
 
 .sub1About {
@@ -267,36 +296,115 @@ dfn:hover::before {
   margin: auto;
 }
 
-.sub2About {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
 .sub2About h3 {
   text-align: center;
   font-weight: bolder;
   font-size: 40px;
+  justify-content: center;
 }
 .sub2About p {
   font-weight: lighter;
   font-size: 20px;
 }
+
+.sub2About {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.sub2About h3,
+.juniorWebDev h3,
+.seniorWebDev h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+
+.university h3,
+.intermediate h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+
+.mainDivContact h1 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 40px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
 /* navbar */
 /* resume */
 
 .logo h3 {
   color: white;
   padding-left: 20px;
+  font-family: "Inspiration", cursive;
+  font-size: 25px;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   display: flex;
   justify-content: space-between;
+  height: 67px;
 }
 
 /* Links inside the navbar */
@@ -307,16 +415,13 @@ dfn:hover::before {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Inspiration", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 .logo h3 {
   color: black;
 }
 /* Change background on mouse-over */
-.navbar a:hover,
-.logo h3:hover {
-  background: rgb(138, 104, 104);
-  color: black;
-}
 
 /* Main content */
 .main {
@@ -325,45 +430,34 @@ dfn:hover::before {
 
 /* resume */
 .body {
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
 }
 .experience,
 .education {
-  background-color: #f2ebe9;
+  background-color: #faf6f2;
+  display: block;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 .experience h1,
 .education h1 {
   text-align: center;
   font-size: 50px;
 }
+
 .juniorWebDev,
 .seniorWebDev {
-  height: 200px;
   width: 500px;
   font-size: 25px;
   justify-content: center;
   align-items: center;
-  display: flex;
   text-align: center;
+  border-radius: 20px;
+  margin: 0 auto;
 }
-.juniorWebDevP,
-.seniorWebDevP {
-  height: 200px;
-  width: 500px;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
-
-.junior,
-.senior {
-  display: flex;
-  justify-content: space-around;
-}
-.senior {
-  flex-direction: row-reverse;
+.juniorWebDev p,
+.seniorWebDev p {
+  font-size: 15px;
 }
 
 .universityH,
@@ -397,48 +491,88 @@ dfn:hover::before {
   flex-direction: row-reverse;
 }
 
-.education {
-  margin-bottom: 5%;
-}
-
 .Skills {
   justify-content: space-around;
   object-fit: cover;
 }
 
-/* .html,
-.css,
-.react,
-.sql,
-.node,
-.py { */
-.Skills {
-  height: 200px;
-  width: 200px;
-  padding-top: 40px;
+.university,
+.intermediate {
+  padding-top: 5px;
+}
+.universityH,
+.intermediateH {
+  width: 500px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.universityH p,
+.intermediateH p {
+  font-size: 15px;
+}
 
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 50px;
+.mainDivName h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+.mainDivName {
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 80px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+.junior,
+.senior {
+  padding-top: 10px;
+}
+
+.university,
+.intermediate {
+  width: 500px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.university p,
+.intermediate p {
+  font-size: 15px;
 }
 
 @media (max-width: 425px) {
   .navbar {
     display: block;
-    width: 90%;
-    margin-left: 0px;
+    width: 72%;
   }
-  .logo {
+  .logo h3 {
     text-align: center;
   }
   .nav2 {
+    visibility: hidden;
+  }
+
+  .sub2About p {
+    text-align: left;
+  }
+  /* .nav2 {
     font-size: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 90%;
-  }
+  } */
   .mainAbout {
     padding-top: 90px;
   }
@@ -446,67 +580,51 @@ dfn:hover::before {
     height: 200px;
     width: 200px;
   }
-  .sub2About h3 {
-    font-size: 20px;
-  }
-  .sub2About p {
-    font-size: 10px;
-  }
+
   .experience h1 {
     font-size: 20px;
   }
   .junior,
-  .senior {
-    display: block;
-  }
-  .juniorWebDev,
-  .seniorWebDev {
-    width: 90%;
-    border: 2px solid red;
-  }
-  .juniorWebDevP,
-  .seniorWebDevP {
-    font-size: 15px;
-    width: 90%;
-  }
-
+  .senior,
   .university,
   .intermediate {
     display: block;
   }
-
+  .juniorWebDev,
+  .seniorWebDev,
   .universityH,
   .intermediateH {
-    font-size: 15px;
     width: 90%;
   }
 
-  .universityP,
-  .intermediateP {
-    width: 90%;
-  }
-
-  .education h1 {
-    font-size: 20px;
-  }
+  /* .universityH,
+  .intermediateH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
 
   .outer-wrapper h1 {
     font-size: 20px;
     text-align: center;
   }
 
-  .html,
-  .css,
-  .react,
-  .sql,
-  .node,
-  .py {
-    height: 200px;
-    width: 200px;
+  .university,
+  .intermediate {
+    width: 100%;
+  }
 
+  .subDivContact {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
+  }
+  .div1Contact {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+  .contactAnimation img {
+    height: 400px;
+    width: 400px;
   }
 }
