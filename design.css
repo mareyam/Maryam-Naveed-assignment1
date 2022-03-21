@@ -7,7 +7,6 @@
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  border: 2px solid black;
   background-color: rgb(46, 45, 45);
 }
 
@@ -35,13 +34,11 @@
   background-color: #faf6f2;
   display: flex;
   height: 40rem;
-  border: 2px solid green;
 }
 
 .sub1About img {
   width: 90%;
   height: 90%;
-  border: 2px solid red;
 }
 .sub2About {
   width: 50%;
@@ -81,7 +78,6 @@
   font-weight: lighter;
   font-size: 1rem;
   margin-left: 12rem;
-  border: 2px solid red;
 }
 
 .skillsAndExperience h3 {
@@ -98,7 +94,6 @@
   justify-content: center;
   width: 80%;
   height: 7rem;
-  border: 2px solid green;
   overflow: wrap;
 }
 
@@ -157,14 +152,12 @@
 }
 .JUNIORWEBDEV,
 .SENIORWEBDEVELOPER {
-  border: 2px solid red;
   height: 40rem;
   width: 30rem;
   margin-left: 2rem;
 }
 
 .mainDivContact {
-  border: 2px solid red;
   margin-left: 15rem;
   height: 30rem;
 }
@@ -172,7 +165,6 @@
 .contactDetails,
 .subjectMessage {
   margin-left: 20rem;
-  border: 2px solid red;
 }
 
 .mainDivContact h3 {
