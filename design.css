@@ -1,3 +1,246 @@
+.nav2 {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border: 2px solid black;
+  background-color: rgb(46, 45, 45);
+}
+
+/* The navigation menu links */
+.nav2 a {
+  padding: 36px 18px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  font-family: "Inspiration", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav2 h3 {
+  color: white;
+  font-family: "Inspiration", cursive;
+  font-size: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.mainAbout {
+  display: block;
+  background-color: #faf6f2;
+  display: flex;
+  height: 40rem;
+  border: 2px solid green;
+}
+
+.sub1About img {
+  width: 90%;
+  height: 90%;
+  border: 2px solid red;
+}
+.sub2About {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-left: 12rem;
+}
+
+.sub2About h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 50px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.experience {
+  background-color: #faf6f2;
+  display: flex;
+  height: 40rem;
+}
+
+.skillsAndExperience {
+  width: 45%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-left: 12rem;
+  border: 2px solid red;
+}
+
+.skillsAndExperience h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: type 2s steps(40, end) forwards;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  justify-content: center;
+  width: 80%;
+  height: 7rem;
+  border: 2px solid green;
+  overflow: wrap;
+}
+
+.skillsAndExperience2 {
+  display: block;
+  width: 45%;
+}
+
+.skills {
+  margin-left: 5px;
+}
+.container {
+  background-color: rgb(84, 84, 84);
+  width: 95%;
+}
+.skills_html {
+  height: 3px;
+  width: 90%;
+  background-color: red;
+}
+.skills_css {
+  height: 3px;
+  width: 90%;
+  background-color: rgb(57, 174, 66);
+}
+.skills_js {
+  height: 3px;
+  width: 90%;
+  background-color: rgb(106, 10, 111);
+}
+.skills_php {
+  height: 3px;
+  width: 90%;
+  background-color: rgb(3, 77, 73);
+}
+.experience2 {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.WORK {
+  display: flex;
+  margin-left: 12rem;
+}
+.JUNIORWEBDEV h3,
+.SENIORWEBDEVELOPER h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+.JUNIORWEBDEV,
+.SENIORWEBDEVELOPER {
+  border: 2px solid red;
+  height: 40rem;
+  width: 30rem;
+  margin-left: 2rem;
+}
+
+.mainDivContact {
+  border: 2px solid red;
+  margin-left: 15rem;
+  height: 30rem;
+}
+.mainDivContact p,
+.contactDetails,
+.subjectMessage {
+  margin-left: 20rem;
+  border: 2px solid red;
+}
+
+.mainDivContact h3 {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-size: 4rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+.contactDetail {
+  display: flex;
+}
+
+.mainDivContact p {
+  font-size: 1.5rem;
+}
+.nameemail input,
+.message input {
+  height: 3rem;
+  width: 20rem;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 425px) {
+  .mainAbout {
+    display: block;
+  }
+  .nav2 {
+    visibility: hidden;
+    display: none;
+  }
+  .navbar {
+    visibility: hidden;
+    display: none;
+  }
+  .nav2 a {
+    visibility: hidden;
+    display: none;
+  }
+}
 .centered {
   position: absolute;
   top: 50%;
@@ -9,7 +252,20 @@
   font-size: 70px;
   color: white;
   padding-bottom: -10px;
+  font-family: "Oswald", sans-serif;
 }
+
+.mainDivName {
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 80px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(40, end) forwards;
+}
+
 .viewProfile {
   display: flex;
   justify-content: center;
@@ -129,209 +385,13 @@ dfn:hover::before {
   top: 90px;
 }
 
-/* workdone */
-
-.outer-wrapper {
-  margin-top: 70px;
-  z-index: -2;
-}
-.s-wrap {
-  margin-bottom: 50px;
-  padding-bottom: 55%;
-  position: relative;
-  border: 10px solid #fff;
-  background-color: #faf6f2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-/* when i click on pic it will take it back uper instead of being in same pos */
-.s-wrap > input {
-  display: none;
-}
-.s-wrap .s-content {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 500%;
-  height: 100%;
-  transition: transform 1s;
-}
-.s-wrap .s-item {
-  display: inline-block;
-  width: 20%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.s-wrap .s-item-1 {
-  background-image: url("img1.jpg");
-}
-.s-wrap .s-item-2 {
-  background-image: url("img2.jpg");
-}
-.s-wrap .s-item-3 {
-  background-image: url("img3.jpg");
-}
-.s-wrap .s-item-4 {
-  background-image: url("img4.jpg");
-}
-
-.s-type-1 .s-control {
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  text-align: center;
-  transform: translateX(-50%);
-  transition-timing-function: ease-out;
-}
-.s-type-1 .s-control > label[class^="s-c-"] {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
-  border-radius: 50%;
-  border: 1px solid #999;
-  background-color: #faf6f2;
-  cursor: pointer;
-}
-.s-type-1 .s-nav label {
-  display: none;
-  position: absolute;
-  top: 50%;
-  padding: 5px 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.s-type-1 .s-nav label::before,
-.s-type-1 .s-nav label::after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 24px;
-  background-color: #fff;
-}
-.s-type-1 .s-nav label::before {
-  margin-bottom: -12px;
-}
-.s-type-1 .s-nav label.left {
-  left: 20px;
-}
-.s-type-1 .s-nav label.left::before {
-  transform: rotate(45deg);
-}
-.s-type-1 .s-nav label.left::after {
-  transform: rotate(-45deg);
-}
-.s-type-1 .s-nav label.right {
-  right: 20px;
-}
-.s-type-1 .s-nav label.right::before {
-  transform: rotate(-45deg);
-}
-.s-type-1 .s-nav label.right::after {
-  transform: rotate(45deg);
-}
-.s-type-1 #s-1:checked ~ .s-content {
-  transform: translateX(0%);
-}
-.s-type-1 #s-1:checked ~ .s-control .s-c-1 {
-  background-color: #333;
-}
-.s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
-  display: block;
-}
-.s-type-1 #s-2:checked ~ .s-content {
-  transform: translateX(-20%);
-}
-.s-type-1 #s-2:checked ~ .s-control .s-c-2 {
-  background-color: #333;
-}
-.s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
-  display: block;
-}
-.s-type-1 #s-3:checked ~ .s-content {
-  transform: translateX(-40%);
-}
-.s-type-1 #s-3:checked ~ .s-control .s-c-3 {
-  background-color: #333;
-}
-.s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
-  display: block;
-}
-.s-type-1 #s-4:checked ~ .s-content {
-  transform: translateX(-60%);
-}
-.s-type-1 #s-4:checked ~ .s-control .s-c-4 {
-  background-color: #333;
-}
-.s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
-  display: block;
-}
-.s-type-1 #s-5:checked ~ .s-content {
-  transform: translateX(-80%);
-}
-.s-type-1 #s-5:checked ~ .s-control .s-c-5 {
-  background-color: #333;
-}
-.s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
-  display: block;
-}
-
 /* about *.........*/
 
-.mainAbout {
-  margin-bottom: 5%;
-  display: block;
-  background-color: #faf6f2;
-}
-
-.sub1About {
-  margin-top: 5%;
-}
-.sub1About img {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  margin: auto;
-}
-
-.sub2About h3 {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 40px;
-  justify-content: center;
-}
-.sub2About p {
-  font-weight: lighter;
-  font-size: 20px;
-}
-
-.sub2About {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
-}
-
-.sub2About h3,
 .juniorWebDev h3,
 .seniorWebDev h3 {
-  color: #355c7d;
+  color: white;
   font-family: "Fira Code", monospace;
-  font-size: 20px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 2s steps(40, end) forwards;
-}
-
-.university h3,
-.intermediate h3 {
-  color: #355c7d;
-  font-family: "Fira Code", monospace;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -386,43 +446,6 @@ dfn:hover::before {
   }
 }
 
-/* navbar */
-/* resume */
-
-.logo h3 {
-  color: white;
-  padding-left: 20px;
-  font-family: "Inspiration", cursive;
-  font-size: 25px;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #faf6f2;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  display: flex;
-  justify-content: space-between;
-  height: 67px;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: "Inspiration", cursive;
-  font-family: "Montserrat", sans-serif;
-}
-.logo h3 {
-  color: black;
-}
-/* Change background on mouse-over */
-
 /* Main content */
 .main {
   margin-bottom: 30px; /* Add a top margin to avoid content overlay */
@@ -432,63 +455,22 @@ dfn:hover::before {
 .body {
   background-color: #faf6f2;
 }
-.experience,
-.education {
-  background-color: #faf6f2;
-  display: block;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.experience h1,
-.education h1 {
-  text-align: center;
-  font-size: 50px;
-}
 
 .juniorWebDev,
 .seniorWebDev {
-  width: 500px;
+  width: 45%;
   font-size: 25px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 0 auto;
+  text-align: left;
+  background-color: #355c7d;
+  margin-right: 2px;
+  height: 300px;
 }
 .juniorWebDev p,
 .seniorWebDev p {
   font-size: 15px;
-}
-
-.universityH,
-.intermediateH {
-  height: 200px;
-  width: 500px;
-  font-size: 25px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
-.universityP,
-.intermediateP {
-  height: 200px;
-  width: 500px;
+  color: #e8e8e8;
   text-align: left;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
-
-.university,
-.intermediate {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-.intermediate {
-  flex-direction: row-reverse;
+  padding-left: 5px;
 }
 
 .Skills {
@@ -496,122 +478,61 @@ dfn:hover::before {
   object-fit: cover;
 }
 
-.university,
-.intermediate {
-  padding-top: 5px;
-}
-.universityH,
-.intermediateH {
-  width: 500px;
-  font-size: 25px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 0 auto;
-  display: block;
-}
-.universityH p,
-.intermediateH p {
-  font-size: 15px;
-}
-
-.mainDivName h1 {
-  font-family: "Oswald", sans-serif;
-}
-
-.mainDivName {
-  color: white;
-  font-family: "Fira Code", monospace;
-  font-size: 80px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 2s steps(40, end) forwards;
-}
 .junior,
 .senior {
   padding-top: 10px;
 }
 
-.university,
-.intermediate {
-  width: 500px;
-  font-size: 25px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.university p,
-.intermediate p {
-  font-size: 15px;
+.mainDiv img {
+  height: 45rem;
 }
 
 @media (max-width: 425px) {
-  .navbar {
-    display: block;
-    width: 72%;
-  }
-  .logo h3 {
-    text-align: center;
-  }
-  .nav2 {
-    visibility: hidden;
+  .mainDivName h1 {
+    font-size: 40px;
   }
 
-  .sub2About p {
-    text-align: left;
-  }
-  /* .nav2 {
-    font-size: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 90%;
-  } */
-  .mainAbout {
-    padding-top: 90px;
-  }
-  .sub1About img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .experience h1 {
-    font-size: 20px;
-  }
-  .junior,
-  .senior,
-  .university,
-  .intermediate {
-    display: block;
-  }
-  .juniorWebDev,
-  .seniorWebDev,
-  .universityH,
-  .intermediateH {
-    width: 90%;
-  }
-
-  /* .universityH,
-  .intermediateH {
+  .viewProfile {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
+  }
+  .viewProfile button {
+    font-size: 20px;
+    color: white;
+    border: 3px solid white;
+    background-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .viewProfile button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .viewProfile button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .viewProfile button:hover span {
+    padding-right: 25px;
+  }
+
+  .viewProfile button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
   .outer-wrapper h1 {
     font-size: 20px;
     text-align: center;
-  }
-
-  .university,
-  .intermediate {
-    width: 100%;
   }
 
   .subDivContact {
@@ -628,3 +549,4 @@ dfn:hover::before {
     width: 400px;
   }
 }
+
