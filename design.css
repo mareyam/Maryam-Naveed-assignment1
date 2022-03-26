@@ -41,13 +41,15 @@
   height: 90%;
 }
 .sub2About {
-  width: 50%;
+  width: 40%;
   text-align: left;
-  margin: auto;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 1rem;
-  margin-left: 12rem;
+  margin-left: 11rem;
+}
+.sub2About p {
+  width: 95%;
 }
 
 .sub2About h3 {
@@ -68,7 +70,7 @@
 .experience {
   background-color: #faf6f2;
   display: flex;
-  height: 40rem;
+  /* height: 40rem; */
 }
 
 .skillsAndExperience {
@@ -93,7 +95,7 @@
   font-size: 3rem;
   justify-content: center;
   width: 80%;
-  height: 7rem;
+  /* height: 7rem; */
   overflow: wrap;
 }
 
@@ -137,7 +139,8 @@
 
 .WORK {
   display: flex;
-  margin-left: 12rem;
+  margin-left: 9rem;
+  background-color: #faf6f2;
 }
 .JUNIORWEBDEV h3,
 .SENIORWEBDEVELOPER h3 {
@@ -157,6 +160,9 @@
   margin-left: 2rem;
 }
 
+.JUNIORWEBDEV {
+  margin-left: 6rem;
+}
 .mainDivContact {
   margin-left: 15rem;
   height: 30rem;
@@ -184,55 +190,90 @@
 .mainDivContact p {
   font-size: 1.5rem;
 }
-.nameemail input,
-.message input {
-  height: 3rem;
-  width: 20rem;
+
+body {
+  background: #faf6f2;
+  margin: 0;
+}
+.form {
+  width: 50rem;
+  height: 25rem;
+  background: #e6e6e6;
+  border-radius: 0.5rem;
+  /* top right bottom left*/
+  margin: -10rem 10rem 1rem 22rem;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+.contactdivv {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
 }
 
 /* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 425px) {
-  .mainAbout {
-    display: block;
-  }
-  .nav2 {
-    visibility: hidden;
-    display: none;
-  }
-  .navbar {
-    visibility: hidden;
-    display: none;
-  }
-  .nav2 a {
-    visibility: hidden;
-    display: none;
-  }
-}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -478,67 +519,247 @@ dfn:hover::before {
 .mainDiv img {
   height: 45rem;
 }
+/* 
 
+
+
+
+
+
+
+
+ */
 @media (max-width: 425px) {
-  .mainDivName h1 {
-    font-size: 40px;
+  .navbar {
+    visibility: hidden;
   }
-
-  .viewProfile {
-    display: flex;
-  }
-  .viewProfile button {
-    font-size: 20px;
-    color: white;
-    border: 3px solid white;
-    background-color: transparent;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-
-  .viewProfile button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  .viewProfile button span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-
-  .viewProfile button:hover span {
-    padding-right: 25px;
-  }
-
-  .viewProfile button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-  .outer-wrapper h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .subDivContact {
+  .mainAbout {
     display: block;
   }
-  .div1Contact {
-    justify-content: center;
-    align-items: center;
+  .sub2About {
+    width: 100%;
+    border: 2px solid red;
     margin: 0 auto;
-    display: flex;
   }
-  .contactAnimation img {
-    height: 400px;
-    width: 400px;
+  .sub1About img {
+    visibility: hidden;
+  }
+  .experience {
+    width: 100%;
+    display: block;
+    border: 2px solid green;
+
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  .skillsAndExperience {
+    width: 100%;
+    border: 2px solid yellow;
+    margin: 0 auto;
+  }
+  .skillsAndExperience h3 {
+    border: 2px solid black;
+    width: 100%;
+  }
+  .skillsAndExperience2 {
+    width: 80%;
+    display: block;
+    border: 2px solid green;
+    margin: 0 auto;
+  }
+  .skills {
+    width: 100%;
+    display: block;
+    border: 2px solid yellow;
+  }
+  .experience2 {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
+  }
+  .juniorWebDev,
+  .seniorWebDev {
+    width: 100%;
+    border: 2px solid brown;
+    margin-bottom: 1rem;
+  }
+  .WORK {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    visibility: hidden;
+  }
+  .mainAbout {
+    display: block;
+  }
+  .sub2About {
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  .sub1About img {
+    visibility: hidden;
+  }
+  .experience {
+    width: 100%;
+    display: block;
+    border: 2px solid green;
+
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  .skillsAndExperience {
+    width: 100%;
+    border: 2px solid yellow;
+    margin: 0 auto;
+  }
+  .skillsAndExperience h3 {
+    border: 2px solid black;
+    width: 100%;
+  }
+  .skillsAndExperience2 {
+    width: 80%;
+    display: block;
+    border: 2px solid green;
+    margin: 0 auto;
+  }
+  .skills {
+    width: 100%;
+    display: block;
+    border: 2px solid yellow;
+  }
+  .experience2 {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
+  }
+  .juniorWebDev,
+  .seniorWebDev {
+    width: 100%;
+    border: 2px solid brown;
+    margin-bottom: 1rem;
+  }
+  .WORK {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* .mainAbout {
+    display: block;
+  }
+  .sub2About {
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  .experience {
+    width: 100%;
+    display: block;
+    border: 2px solid green;
+
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  .skillsAndExperience {
+    width: 100%;
+    border: 2px solid yellow;
+    margin: 0 auto;
+  }
+  .skillsAndExperience h3 {
+    border: 2px solid black;
+    width: 100%;
+  }
+  .skillsAndExperience2 {
+    width: 80%;
+    display: block;
+    border: 2px solid green;
+    margin: 0 auto;
+  }
+  .skills {
+    width: 100%;
+    display: block;
+    border: 2px solid yellow;
+  }
+  .experience2 {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
+  }
+  .juniorWebDev,
+  .seniorWebDev {
+    width: 100%;
+    border: 2px solid brown;
+    margin-bottom: 1rem;
+  }
+  .WORK {
+    width: 100%;
+    display: block;
+    border: 2px solid brown;
+  } */
+}
+
+@media (max-width: 2560px) {
+  .mainAbout {
+    border: 2px solid red;
+    margin-left: -0.5rem;
+  }
+  .sub2About {
+    border: 2px solid yellow;
+  }
+  .sub1About img {
+    border: 2px solid yellow;
+  }
+  .experience {
+    border: 2px solid green;
+  }
+  .skillsAndExperience {
+    border: 2px solid orange;
+    width: 100%;
+  }
+  .skillsAndExperience h3 {
+    border: 3px solid black;
+    width: 100%;
+  }
+  .skillsAndExperience2 {
+    border: 2px solid purple;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .skills {
+    border: 2px solid green;
+  }
+  .experience {
+    border: 10px solid pink;
+    margin-left: -1.5rem;
+  }
+  .experience2 {
+    border: 5px solid orange;
+    display: block;
+  }
+  .juniorWebDev {
+    border: 2px solid orange;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .seniorWebDev {
+    border: 2px solid orange;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+  }
+}
