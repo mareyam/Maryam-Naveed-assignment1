@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="design.css">
-    <script src="https://use.fontawesome.com/015b413b1a.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<title>Maryam</title>
-
+  <meta charset="UTF-8">
+  <title>Responsive Resume Template | Webdevtrick.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="a1.css">
+ 
 </head>
 <body>
-    <div class="mainDiv">
-            <div class="centered">
-                <div class="mainDivName">
-                    <h1>MARYAM NAVEED</h1>
-                </div>
-                <div class="viewProfile">
-                    <a href="resume.html"> 
-                        <button><span>View Profile</span></button>
-                    </a> 
-                </div>
-            </div>
-            <img src="" id="image">
-    
-        <script type="text/javascript">
-            let image = document.getElementById('image');
-            let images = ['img1.jpg','img2.jpg','img3.jpg','img4.jpg']
-            setInterval(function(){
-                let random = Math.floor(Math.random() * 4);
-                image.src = images[random];
-            }, 800);
-        </script>
-    </div>
+ 
+<div class="resume-wrapper">
+ <section class="profile section-padding">
+ <div class="container">
+ <div class="picture-resume-wrapper">
+      
+      <div class="name-wrapper">
+        <h1>Maryam Naveed</h1>
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+       <ul class="list-titles">
+       <li>Phone#:</li>
+       <li>Email</li>
+       <li>Website</li>
+       <li>Address</li>
+       </ul>
+        <ul class="list-content ">
+         <li>01234567890</li> 
+         <li>contact@maryam.com</li> 
+         <li><a href="#">maryam.com</a></li> 
+         <li>Lahore,Pakistan</li> 
+        </ul>
+      </div>
+      <div class="contact-presentation"> 
+       <p><span class="bold aboutMe">About Me</span></br>ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod congue nisi, nec consequat quam. In consectetur faucibus turpis eget laoreet. Sed nec imperdiet purus. </p>
+      </div>
+      <div class="contact-social clearfix">
+       <ul class="list-titles">
+       <li>Twitter</li>
+       <li>Linkedin</li>
+       <li>Codepen</li>
+       </ul>
+        <ul class="list-content">
+       <li><a href="">@mareyamx</a></li>
+       <li><a href="">@mareyamx</a></li> 
+       <li><a href="">@maryamnaveed</a></li>
+       </ul>
+      </div>
+ </div>
+ </section>
+  
+  <section class="experience section-padding">
+   <div class="container">
+   <h3 class="experience-title">Experience</h3>
+      
+      <div class="experience-wrapper">
+       <div class="company-wrapper clearfix">
+       <div class="experience-title">Arbisoft</div> 
+          <div class="time">Nov 2021- Present</div> 
+       </div>
+        
+        <div class="job-wrapper clearfix">
+         <div class="experience-title">Front End Developer </div> 
+          <div class="company-description">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+       <div class="experience-title">Softec</div> 
+          <div class="time">September 2020 - November 2021</div> 
+       </div>
+        
+         <div class="job-wrapper clearfix">
+         <div class="experience-title"> Web Designer / Web Developer</div> 
+          <div class="company-description">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+       <div class="experience-title">Systems</div>
+          <div class="time">August 2011 - September 2020</div> 
+       </div> 
+        
+         <div class="job-wrapper clearfix">
+         <div class="experience-title">Web Designer </div>
+          <div class="company-description">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>   
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="section-wrapper clearfix">
+       <h3 class="section-title">Skills</h3>
+         <ul>
+         <li class="skill-percentage">HTML / HTML5</li>
+         <li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
+         <li class="skill-percentage">Javascript</li>
+         <li class="skill-percentage">Jquery</li>
+         <li class="skill-percentage">Wordpress</li>
+         <li class="skill-percentage">PHP</li>
+            
+         </ul>
+        
+      </div>
+      
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobbies</h3>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
+      </div>
+      
+   </div>
+  </section>
+  
+  <div class="clearfix"></div>
+</div>
+ 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script  src="function.js"></script>
+ 
 </body>
 </html>
